@@ -13,7 +13,6 @@ const GenerateQuestions = () => {
     const response = await generateQuestions(questionType);
     setQuestions(response.questions);
     setShowWaitingMessage(false);
-    setShowAnswer(false);
   };
 
 
