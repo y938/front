@@ -4,7 +4,16 @@ to = "/index.html"
 status=200
 
 
-[[headers]]
-  for = "/*"
-    [headers.values]
-      Access-Control-Allow-Origin = "*"
+[[redirects]]
+  from = "/ask"
+  to = "https://nlppdfreader.onrender.com/ask-question"
+  status = 200
+  force = true
+  headers = { Access-Control-Allow-Origin = "*" }
+
+[[redirects]]
+  from = "/generate"
+  to = "https://nlppdfreader.onrender.com/generate-questions"
+  status = 200
+  force = true
+  headers = { Access-Control-Allow-Origin = "*" }
